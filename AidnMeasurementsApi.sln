@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.WebApi", "AidnMeasurementsApi.WebApi\AidnMeasurementsApi.WebApi.csproj", "{E0621671-BD8D-4315-AA1B-356289BA10DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AidnMeasurementsApi.WebApi", "AidnMeasurementsApi.WebApi\AidnMeasurementsApi.WebApi.csproj", "{E0621671-BD8D-4315-AA1B-356289BA10DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Domain", "AidnMeasurementsApi.Domain\AidnMeasurementsApi.Domain.csproj", "{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Business", "AidnMeasurementsApi.Business\AidnMeasurementsApi.Business.csproj", "{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Data", "AidnMeasurementsApi.Data\AidnMeasurementsApi.Data.csproj", "{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{E0621671-BD8D-4315-AA1B-356289BA10DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0621671-BD8D-4315-AA1B-356289BA10DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0621671-BD8D-4315-AA1B-356289BA10DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
