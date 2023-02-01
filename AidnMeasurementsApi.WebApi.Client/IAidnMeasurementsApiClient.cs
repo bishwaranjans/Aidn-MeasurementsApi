@@ -6,5 +6,5 @@ namespace AidnMeasurementsApi.WebApi.Client;
 public interface IAidnMeasurementsApiClient
 {
     [Post("/NewsScore")]
-    Task<IApiResponse<NewsScore>> Get([Body] MeasurementsModel measurementsModel);
+    Task<IApiResponse<NewsScore>> Get([Body] IEnumerable<Measurement> measurements);
 }

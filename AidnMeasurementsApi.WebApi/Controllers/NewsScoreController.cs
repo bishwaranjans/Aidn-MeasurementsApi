@@ -20,16 +20,16 @@ public class NewsScoreController : ControllerBase
     public NewsScoreController(INewsScoreApi newsScoreApi) => _newsScoreApi = newsScoreApi;
 
     [HttpPost]
-    public ActionResult<NewsScore> Post([FromBody] MeasurementsModel measurementsModel)
+    public ActionResult<NewsScore> Post([FromBody] IEnumerable<Measurement> measurements)
     {
-        var (isValid, validationResults) = AidnValidator.TryValidateObjects(measurementsModel.Measurements);
+        var (isValid, validationResults) = AidnValidator.TryValidateObjects(measurements);
 
         if (!isValid)
         {
             return ValidationProblem(ModelState.WithError(validationResults));
         }
 
-        return Ok(_newsScoreApi.GetNewsScore(measurementsModel.Measurements).Map());
+        return Ok(_newsScoreApi.GetNewsScore(measurements).Map());
     }
 }
 

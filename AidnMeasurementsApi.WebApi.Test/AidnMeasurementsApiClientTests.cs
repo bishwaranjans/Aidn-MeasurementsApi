@@ -21,14 +21,13 @@ public class AidnMeasurementsApiClientTests : AidnTestWebHost<Program>
             new Measurement() { MeasurementType = MeasurementType.HR, Value= 60 },
             new Measurement() { MeasurementType = MeasurementType.RR, Value= 5 },
         };
-        var measurementsModel = new MeasurementsModel(measurements);
-
+       
         var mock = new Mock<INewsScoreApi>(MockBehavior.Strict);
         mock.Setup(x => x.GetNewsScore(It.IsAny<IEnumerable<Measurement>>())).Returns(3);
         ReplaceService(mock.Object);
 
         // Act
-        var result = await Client.Get(measurementsModel);
+        var result = await Client.Get(measurements);
 
         // Assert
         Assert.NotNull(result);
@@ -50,14 +49,13 @@ public class AidnMeasurementsApiClientTests : AidnTestWebHost<Program>
             new Measurement() { MeasurementType = MeasurementType.HR, Value= 19060 },
             new Measurement() { MeasurementType = MeasurementType.RR, Value= 5 },
         };
-        var measurementsModel = new MeasurementsModel(measurements);
-
+      
         var mock = new Mock<INewsScoreApi>(MockBehavior.Strict);
         mock.Setup(x => x.GetNewsScore(It.IsAny<IEnumerable<Measurement>>())).Returns(3);
         ReplaceService(mock.Object);
 
         // Act
-        var result = await Client.Get(measurementsModel);
+        var result = await Client.Get(measurements);
 
         // Assert
         Assert.NotNull(result);
