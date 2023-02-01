@@ -5,11 +5,17 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AidnMeasurementsApi.WebApi", "AidnMeasurementsApi.WebApi\AidnMeasurementsApi.WebApi.csproj", "{E0621671-BD8D-4315-AA1B-356289BA10DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Domain", "AidnMeasurementsApi.Domain\AidnMeasurementsApi.Domain.csproj", "{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AidnMeasurementsApi.Domain", "AidnMeasurementsApi.Domain\AidnMeasurementsApi.Domain.csproj", "{EC8CFE1D-6418-43F4-B6F8-3CB4C4D26BE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Business", "AidnMeasurementsApi.Business\AidnMeasurementsApi.Business.csproj", "{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AidnMeasurementsApi.Business", "AidnMeasurementsApi.Business\AidnMeasurementsApi.Business.csproj", "{CF8483E7-800E-4CE7-9DA8-8DBDF606B139}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Data", "AidnMeasurementsApi.Data\AidnMeasurementsApi.Data.csproj", "{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AidnMeasurementsApi.Data", "AidnMeasurementsApi.Data\AidnMeasurementsApi.Data.csproj", "{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.Business.Test", "AidnMeasurementsApi.Business.Test\AidnMeasurementsApi.Business.Test.csproj", "{C9E18E6D-5903-4D28-91A0-F6686EEDE684}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.WebApi.Client.Test", "AidnMeasurementsApi.WebApi.Test\AidnMeasurementsApi.WebApi.Client.Test.csproj", "{254B200E-BDF4-4E53-B6C6-EA59DD713804}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AidnMeasurementsApi.WebApi.Client", "AidnMeasurementsApi.WebApi.Client\AidnMeasurementsApi.WebApi.Client.csproj", "{E1A42131-9AD5-45F0-B8B2-D0783C25680B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +39,18 @@ Global
 		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2DBC89A-CEC4-494A-AD3E-9E225C39438A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9E18E6D-5903-4D28-91A0-F6686EEDE684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E18E6D-5903-4D28-91A0-F6686EEDE684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E18E6D-5903-4D28-91A0-F6686EEDE684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E18E6D-5903-4D28-91A0-F6686EEDE684}.Release|Any CPU.Build.0 = Release|Any CPU
+		{254B200E-BDF4-4E53-B6C6-EA59DD713804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{254B200E-BDF4-4E53-B6C6-EA59DD713804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{254B200E-BDF4-4E53-B6C6-EA59DD713804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{254B200E-BDF4-4E53-B6C6-EA59DD713804}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A42131-9AD5-45F0-B8B2-D0783C25680B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A42131-9AD5-45F0-B8B2-D0783C25680B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A42131-9AD5-45F0-B8B2-D0783C25680B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A42131-9AD5-45F0-B8B2-D0783C25680B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
