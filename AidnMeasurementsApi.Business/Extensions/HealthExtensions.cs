@@ -14,12 +14,12 @@ public static class HealthExtensions
             throw new KeyNotFoundException(nameof(measurementType));
         }
 
-        foreach (var range in ranges)
+        foreach (var range in from range in ranges
+                              let rangeKey = range.Key
+                              where value > rangeKey.Min && value <= rangeKey.Max
+                              select range)
         {
-            if (value > range.Min && value <= range.Max)
-            {
-                return range.Score;
-            }
+            return range.Value;
         }
 
         throw new KeyNotFoundException(value.ToString());
