@@ -14,9 +14,9 @@ public class NewsScoreApiTests
         // Arrange
         var measurements = new List<Measurement>
         {
-            new Measurement() { MeasurementType = MeasurementType.TEMP, Value= 37 },
-            new Measurement() { MeasurementType = MeasurementType.HR, Value= 60 },
-            new Measurement() { MeasurementType = MeasurementType.RR, Value= 5 },
+            new() { MeasurementType = MeasurementType.TEMP, Value= 37 },
+            new() { MeasurementType = MeasurementType.HR, Value= 60 },
+            new() { MeasurementType = MeasurementType.RR, Value= 5 },
         };
 
         // Act
@@ -32,9 +32,9 @@ public class NewsScoreApiTests
         // Arrange
         var measurements = new List<Measurement>
         {
-            new Measurement() { MeasurementType = MeasurementType.TEMP, Value= 37 },
-            new Measurement() { MeasurementType = MeasurementType.HR, Value= 10060 },
-            new Measurement() { MeasurementType = MeasurementType.RR, Value= 5 },
+            new() { MeasurementType = MeasurementType.TEMP, Value= 37 },
+            new() { MeasurementType = MeasurementType.HR, Value= 10060 },
+            new() { MeasurementType = MeasurementType.RR, Value= 5 },
         };
 
         // Act & Assert
@@ -44,11 +44,8 @@ public class NewsScoreApiTests
     [Fact]
     public void InValidMeasurements_Throws_Exception()
     {
-        // Arrange
-        var measurements = new List<Measurement>();
-
         // Act & Assert
-        Assert.Throws<ArgumentException>(() => Api.GetNewsScore(measurements));
+        Assert.Throws<ArgumentException>(() => Api.GetNewsScore(new List<Measurement>()));
     }
 }
 

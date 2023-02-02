@@ -3,6 +3,8 @@ using AidnMeasurementsApi.Domain;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.Identity.Web;
 
+namespace AidnMeasurementsApi.WebApi;
+
 public class Program
 {
     public static void Main(string[] args)
